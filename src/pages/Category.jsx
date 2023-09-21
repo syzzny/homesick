@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-    ContentWrap, BestTitle, BestWrap, BestItemWrap, BestWrapTop, More, CategoryItem, CategoryName
+    ContentWrap, BestTitle, BestWrap, BestItemWrap, BestWrapTop, More, CategoryItem, CategoryName, CategoryImg
 } from '../styles/StyleComp'
 
 export default function Category() {
@@ -17,35 +17,35 @@ export default function Category() {
                 </BestWrapTop>
                 <BestItemWrap>
                     <CategoryItem>
-                        <img src={`${process.env.PUBLIC_URL}/assets/img/furniture.png`} alt="" />
+                        <CategoryImg src={`${process.env.PUBLIC_URL}/assets/img/furniture.png`} alt="" />
                         <CategoryName>가구</CategoryName>
                     </CategoryItem>
                     <CategoryItem>
-                        <img src={`${process.env.PUBLIC_URL}/assets/img/bad.png`} alt="" />
+                        <CategoryImg src={`${process.env.PUBLIC_URL}/assets/img/bad.png`} alt="" />
                         <CategoryName>패브릭</CategoryName>
                     </CategoryItem>
                     <CategoryItem>
-                        <img src={`${process.env.PUBLIC_URL}/assets/img/elect.png`} alt="" />
+                        <CategoryImg src={`${process.env.PUBLIC_URL}/assets/img/elect.png`} alt="" />
                         <CategoryName>가전전자</CategoryName>
                     </CategoryItem>
                     <CategoryItem>
-                        <img src={`${process.env.PUBLIC_URL}/assets/img/bath.png`} alt="" />
+                        <CategoryImg src={`${process.env.PUBLIC_URL}/assets/img/bath.png`} alt="" />
                         <CategoryName>욕실</CategoryName>
                     </CategoryItem>
                     <CategoryItem>
-                        <img src={`${process.env.PUBLIC_URL}/assets/img/light.png`} alt="" />
+                        <CategoryImg src={`${process.env.PUBLIC_URL}/assets/img/light.png`} alt="" />
                         <CategoryName>조명</CategoryName>
                     </CategoryItem>
                     <CategoryItem>
-                        <img src={`${process.env.PUBLIC_URL}/assets/img/kitchen.png`} alt="" />
+                        <CategoryImg src={`${process.env.PUBLIC_URL}/assets/img/kitchen.png`} alt="" />
                         <CategoryName>주방용품</CategoryName>
                     </CategoryItem>
                     <CategoryItem>
-                        <img src={`${process.env.PUBLIC_URL}/assets/img/life.png`} alt="" />
+                        <CategoryImg src={`${process.env.PUBLIC_URL}/assets/img/life.png`} alt="" />
                         <CategoryName>생활용품</CategoryName>
                     </CategoryItem>
                     <CategoryItem>
-                        <img src={`${process.env.PUBLIC_URL}/assets/img/lifeitem.png`} alt="" />
+                        <CategoryImg src={`${process.env.PUBLIC_URL}/assets/img/lifeitem.png`} alt="" />
                         <CategoryName>생필품</CategoryName>
                     </CategoryItem>
                 </BestItemWrap>

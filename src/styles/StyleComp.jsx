@@ -15,6 +15,10 @@ export const Header = styled.header`
     @media (max-width: 1024px) {
         max-width: 880px;
     }
+    /* 768px 이하에서 적용되는 스타일 */
+    @media (max-width: 768px) {
+        max-width: 680px;
+    }
 `
 export const Nav = styled.nav`
     display: flex;
@@ -42,15 +46,18 @@ export const SubIcon = styled.a`
 export const Wrap = styled.div`
     max-width: 1200px;
     margin: 0 auto;
-    /* background-color: #f5f5f5; */
     padding: 20px 0;
-    /* font-family: 'Noto Sans KR', sans-serif; */
     padding-bottom: 50px;
 
     /* 1024px 이하에서 적용되는 스타일 */
     @media (max-width: 1024px) {
         max-width: 880px;
     }
+    /* 768px 이하에서 적용되는 스타일 */
+    @media (max-width: 768px) {
+        max-width: 680px;
+    }
+    
 `
 export const MainImgWrap = styled.div`
     width: 540px;
@@ -62,6 +69,11 @@ export const MainImgWrap = styled.div`
     @media (max-width: 1024px) {
         width: 440px;
         height: 440px;
+    }
+    /* 768px 이하에서 적용되는 스타일 */
+    @media (max-width: 768px) {
+        width: 340px;
+        height: 340px;
     }
 `
 export const MainImg = styled.img`
@@ -75,6 +87,11 @@ export const MainWrap = styled.div`
     align-items: center;
     justify-content: space-between;
     gap: 70px;
+
+    /* 768px 이하에서 적용되는 스타일 */
+    @media (max-width: 768px) {
+        gap: 40px;
+    }
 `
 export const MainTextWrap = styled.div`
     display: grid;
@@ -97,6 +114,11 @@ export const MainTitle = styled.h2`
         font-size: 45px;
         line-height: 65px;
     }
+    /* 768px 이하에서 적용되는 스타일 */
+    @media (max-width: 768px) {
+        font-size: 36px;
+        line-height: 50px;
+    }
 `
 export const DetailButton = styled.a`
     cursor: pointer;
@@ -113,6 +135,10 @@ export const DetailButton = styled.a`
     @media (max-width: 1024px) {
         width: 110px;
     }
+    /* 768px 이하에서 적용되는 스타일 */
+    @media (max-width: 768px) {
+        width: 100px;
+    }
 `
 export const DetailLink = styled.a`
     text-decoration: none;
@@ -122,6 +148,10 @@ export const DetailLink = styled.a`
     /* 1024px 이하에서 적용되는 스타일 */
     @media (max-width: 1024px) {
         font-size: 18px;
+    }
+    /* 768px 이하에서 적용되는 스타일 */
+    @media (max-width: 768px) {
+        font-size: 16px;
     }
 `
 export const LinkWrap = styled.a`
@@ -138,6 +168,10 @@ export const ContentWrap = styled.div`
     /* 1024px 이하에서 적용되는 스타일 */
     @media (max-width: 1024px) {
         max-width: 880px;
+    }
+    /* 768px 이하에서 적용되는 스타일 */
+    @media (max-width: 768px) {
+        max-width: 680px;
     }
 `
 export const BestWrapTop = styled.div`
@@ -183,6 +217,10 @@ export const BestInfoWrap = styled.div`
     @media (max-width: 1024px) {
         padding: 25px 22px;
     }
+    /* 768px 이하에서 적용되는 스타일 */
+    @media (max-width: 768px) {
+        padding: 20px 20px;
+    }
 `
 export const BestInfo = styled.p`
     font-size: 18px;
@@ -192,6 +230,11 @@ export const BestInfo = styled.p`
     margin: 0;
     font-weight: 500;
     line-height: 25px;
+
+    /* 768px 이하에서 적용되는 스타일 */
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
 `
 export const ArrowWrap = styled.div`
     cursor: pointer;
@@ -200,6 +243,13 @@ export const ArrowWrap = styled.div`
     background-color: #fff;
     border-radius: 50px;
     line-height: 50px;
+
+    /* 768px 이하에서 적용되는 스타일 */
+    @media (max-width: 768px) {
+        width: 40px;
+        height: 40px;
+        line-height: 44px;
+    }
 `
 export const BestImgWrap = styled.div`
     width: 100%;
@@ -221,13 +271,36 @@ export const CategoryItem = styled.div`
         background-color: #f5f5f5;
         cursor: pointer;
     }
+
+    /* 768px 이하에서 적용되는 스타일 */
+    @media (max-width: 768px) {
+        width: 11%;
+        gap: 13px;
+        padding: 25px 0;
+    }
+`
+export const CategoryImg = styled.img`
+    /* 768px 이하에서 적용되는 스타일 */
+    @media (max-width: 768px) {
+        height: 80%;
+    }
 `
 export const CategoryName = styled.div`
     font-size: 18px;
     font-weight: 500;
+
+    /* 768px 이하에서 적용되는 스타일 */
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
 `
 
 // ------------------------------------------------------------------------exhibition
+export const ExImg = styled.img`
+    display: flex;
+`
+
+// ------------------------------------1
 export const ExWrapf = styled.div`
     width: 372px;
     height: 372px;
@@ -239,17 +312,33 @@ export const ExWrapf = styled.div`
     /* 1024px 이하에서 적용되는 스타일 */
     @media (max-width: 1024px) {
         width: initial;
+        height: 340px;
     }
-`
-export const ExImg = styled.img`
-    display: flex;
+    /* 768px 이하에서 적용되는 스타일 */
+    @media (max-width: 768px) {
+        height: 270px;
+    }
+  
 `
 export const ExImgWrapf = styled.div`
     width: 60%;
     border-radius: 110px;
     margin: 0 auto;
     overflow: hidden;
+
+    /* 1024px 이하에서 적용되는 스타일 */
+    @media (max-width: 1024px) {
+        width: 75%;
+        
+    }
+    /* 768px 이하에서 적용되는 스타일 */
+    @media (max-width: 768px) {
+        width: 85%;
+        height: 190px;
+    }
 `
+
+// ------------------------------------2
 export const ExWraps = styled.div`
     width: 372px;
     height: 372px;
@@ -261,6 +350,12 @@ export const ExWraps = styled.div`
     /* 1024px 이하에서 적용되는 스타일 */
     @media (max-width: 1024px) {
         width: initial;
+        height: 340px;
+
+    }
+    /* 768px 이하에서 적용되는 스타일 */
+    @media (max-width: 768px) {
+        height: 270px;
     }
 `
 export const ExImgWraps = styled.div`
@@ -268,7 +363,14 @@ export const ExImgWraps = styled.div`
     border-radius: 110px;
     margin: 0 auto;
     overflow: hidden;
+
+    /* 1024px 이하에서 적용되는 스타일 */
+    @media (max-width: 1024px) {
+        width: 85%;
+    }
 `
+
+// ------------------------------------3
 export const ExWrapt = styled.div`
     width: 372px;
     height: 372px;
@@ -280,6 +382,12 @@ export const ExWrapt = styled.div`
     /* 1024px 이하에서 적용되는 스타일 */
     @media (max-width: 1024px) {
         width: initial;
+        height: 340px;
+        
+    }
+    /* 768px 이하에서 적용되는 스타일 */
+    @media (max-width: 768px) {
+        height: 270px;
     }
 `
 export const ExImgWrapt = styled.div`
@@ -287,6 +395,16 @@ export const ExImgWrapt = styled.div`
     border-radius: 110px;
     margin: 0 auto;
     overflow: hidden;
+
+    /* 1024px 이하에서 적용되는 스타일 */
+    @media (max-width: 1024px) {
+        width: 75%;
+    }
+    /* 768px 이하에서 적용되는 스타일 */
+    @media (max-width: 768px) {
+        width: 85%;
+        height: 190px;
+    }
 `
 
 // ------------------------------------------------------------------------footer
