@@ -1,17 +1,16 @@
 import React from 'react'
 import {
-    ContentWrap, BestTitle, BestWrap, BestItemWrap, BestItem, ArrowWrap, BestInfoWrap, BestWrapTop,
-    BestInfo, BestImgWrap, More, BestImg
+    ContentWrap, BestTitle, BestWrap, BestItemWrap, BestItem, ArrowWrap, BestInfoWrap, BestWrapTop, ExImgWrapf,
+    BestInfo, BestImgWrap, More, ExWrapf, ExWraps, ExImgWraps, ExWrapt, ExImgWrapt, ExImg
 } from '../styles/StyleComp'
 
-export default function Best() {
+export default function Exhibition() {
     return (
         <div>
             <ContentWrap>
                 <BestWrapTop>
                     <BestWrap>
-                        <BestTitle>주간 베스트</BestTitle>
-                        <img src={`${process.env.PUBLIC_URL}/assets/img/trophy.png`} alt="" />
+                        <BestTitle>오늘의 기획전</BestTitle>
                     </BestWrap>
                     <div>
                         <More href="">더보기</More>
@@ -19,23 +18,29 @@ export default function Best() {
                 </BestWrapTop>
                 <BestItemWrap>
                     <BestItem>
-                        <BestImgWrap><BestImg src={`${process.env.PUBLIC_URL}/assets/img/bestimg01.png`} alt="" /></BestImgWrap>
+                        <ExWrapf>
+                            <ExImgWrapf><ExImg src={`${process.env.PUBLIC_URL}/assets/img/exhibition01.png`} alt="" /></ExImgWrapf>
+                        </ExWrapf>
                         <BestInfoWrap>
-                            <BestInfo>뉴트럴톤 무드 충만하게! 북유럽을 품은 집 in 하와이</BestInfo>
+                            <BestInfo>4년동안 요리조리 바꿔가며 <br></br>- 질릴 틈 없는 나의 집</BestInfo>
                             <ArrowWrap><img src={`${process.env.PUBLIC_URL}/assets/img/goarrow.png`} alt="arrow" /></ArrowWrap>
                         </BestInfoWrap>
                     </BestItem>
                     <BestItem>
-                        <BestImgWrap><BestImg src={`${process.env.PUBLIC_URL}/assets/img/bestimg02.png`} alt="" /></BestImgWrap>
+                        <ExWraps>
+                            <ExImgWraps><ExImg src={`${process.env.PUBLIC_URL}/assets/img/exhibition02.png`} alt=""/></ExImgWraps>
+                        </ExWraps>
                         <BestInfoWrap>
-                            <BestInfo>셀프 시공으로 충분해! 룸메이트와 함께 사는 22평</BestInfo>
+                            <BestInfo>예쁜 데크와 평상을 품은<br></br> 아늑한 복층집</BestInfo>
                             <ArrowWrap><img src={`${process.env.PUBLIC_URL}/assets/img/goarrow.png`} alt="arrow" /></ArrowWrap>
                         </BestInfoWrap>
                     </BestItem>
                     <BestItem>
-                        <BestImgWrap><BestImg src={`${process.env.PUBLIC_URL}/assets/img/bestimg03.png`} alt="" /></BestImgWrap>
+                        <ExWrapt>
+                            <ExImgWrapt><ExImg src={`${process.env.PUBLIC_URL}/assets/img/exhibition01.png`} alt="" /></ExImgWrapt>
+                        </ExWrapt>
                         <BestInfoWrap>
-                            <BestInfo>8평인데 방이 2개!😮 10년차 자취러의 취향 결정체</BestInfo>
+                            <BestInfo>홈캉스를 집에서! <br /> feat. 30평대 반전 온천수 욕실</BestInfo>
                             <ArrowWrap><img src={`${process.env.PUBLIC_URL}/assets/img/goarrow.png`} alt="arrow" /></ArrowWrap>
                         </BestInfoWrap>
                     </BestItem>
