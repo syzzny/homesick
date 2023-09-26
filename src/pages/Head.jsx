@@ -1,9 +1,14 @@
-import React from 'react'
-import { Header, Nav, SubMenu, SubIcon, NavMenu } from '../styles/StyleComp'
+import React, { useState } from 'react'
+import { HeaderWrap, Header, Nav, SubMenu, SubIcon, NavMenu } from '../styles/StyleComp'
 
 export default function Head() {
+    const [isActive, setIsActive] = useState(false);
+
+    const toggleMenu = () => {
+        setIsActive(!isActive);
+    };
     return (
-        <div>
+        <HeaderWrap>
             <Header>
                 <div><img src={`${process.env.PUBLIC_URL}/assets/img/logo.png`} alt="" /></div>
                 <Nav>
@@ -12,9 +17,9 @@ export default function Head() {
                 </Nav>
                 <SubMenu>
                     <SubIcon><img src={`${process.env.PUBLIC_URL}/assets/img/my.png`} alt="" /></SubIcon>
-                    <SubIcon><img src={`${process.env.PUBLIC_URL}/assets/img/shop.png`}alt="" /></SubIcon>
+                    <SubIcon><img src={`${process.env.PUBLIC_URL}/assets/img/shop.png`} alt="" /></SubIcon>
                 </SubMenu>
             </Header>
-        </div>
+        </HeaderWrap>
     )
 }

@@ -1,11 +1,21 @@
 import styled from "styled-components";
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet"></link>
 
+export const HeaderWrap = styled.div`
+    position: fixed;
+    width: 100%;
+    /* background-color: #fff; */
+    backdrop-filter: blur(20px);
+    background-color: #fffc;
+    box-shadow: 0 0.7961918735236395px 0.7961918735236395px -0.9375px #0000, 0 2.414506143104518px 2.414506143104518px -1.875px #0000, 0 6.382653521484461px 6.382653521484461px -2.8125px #0000, 0 20px 20px -3.75px #0000;
+    border-top: 1px solid #f5f5f5;
+    border-bottom: 1px solid #f5f5f5;
+`
 export const Header = styled.header`
     /* font-family: 'Noto Sans KR', sans-serif; */
     display: flex;
     max-width: 1200px;
-    height: 120px;
+    height: 90px;
     margin: 0 auto;
     align-items: center;
     justify-content: space-between;
@@ -43,10 +53,14 @@ export const SubIcon = styled.a`
     border-radius: 50px;
     line-height: 56px;
 `
+
+
+
 export const Wrap = styled.div`
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px 0;
+    padding-top: 150px;
     padding-bottom: 50px;
 
     /* 1024px 이하에서 적용되는 스타일 */
