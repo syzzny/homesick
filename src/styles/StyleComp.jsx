@@ -56,6 +56,7 @@ export const SubIcon = styled.a`
 
 
 
+
 export const Wrap = styled.div`
     max-width: 1200px;
     margin: 0 auto;
@@ -256,7 +257,7 @@ export const ArrowWrap = styled.div`
     height: 50px;
     background-color: #fff;
     border-radius: 50px;
-    line-height: 50px;
+    line-height: 53px;
 
     /* 768px 이하에서 적용되는 스타일 */
     @media (max-width: 768px) {

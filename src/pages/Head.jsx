@@ -2,11 +2,8 @@ import React, { useState } from 'react'
 import { HeaderWrap, Header, Nav, SubMenu, SubIcon, NavMenu } from '../styles/StyleComp'
 
 export default function Head() {
-    const [isActive, setIsActive] = useState(false);
-
-    const toggleMenu = () => {
-        setIsActive(!isActive);
-    };
+    
+    
     return (
         <HeaderWrap>
             <Header>
