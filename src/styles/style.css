@@ -1,0 +1,9 @@
+/* 기본 스타일 */
+.ri-arrow-down-s-line {
+    transition: transform 0.3s;
+}
+
+/* 회전 스타일 */
+.rotate {
+    transform: rotate(180deg);
+}

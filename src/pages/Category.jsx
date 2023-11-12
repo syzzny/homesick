@@ -1,12 +1,12 @@
 import React from 'react'
 import {
-    ContentWrap, BestTitle, BestWrap, BestItemWrap, BestWrapTop, More, CategoryItem, CategoryName, CategoryImg
+    CategoryWrap, BestTitle, BestWrap, BestItemWrap, BestWrapTop, More, CategoryItem, CategoryName, CategoryImg
 } from '../styles/StyleComp'
 
 export default function Category() {
     return (
         <div>
-            <ContentWrap>
+            <CategoryWrap>
                 <BestWrapTop>
                     <BestWrap>
                         <BestTitle>카테고리별 상품찾기</BestTitle>
@@ -49,7 +49,7 @@ export default function Category() {
                         <CategoryName>생필품</CategoryName>
                     </CategoryItem>
                 </BestItemWrap>
-            </ContentWrap>
+            </CategoryWrap>
         </div>
     )
 }
